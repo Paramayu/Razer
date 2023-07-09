@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+@font-face {
+  font-family: razerF5;
+  src: url('../Assets/RazerF5.woff')
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Encode Sans', sans-serif;
+}
+
+body {
+  background-color: #222;
+  height: 200vh;
+}
+
+.logo {
+  width: 2rem;
+  height: 2rem;
+}
+
+.nav-ul {
+  padding-left: 2%;
+  margin-right: 5vw;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 100%;
+}
+
+.nav-li:hover {
+  opacity: 1;
+}
+
+.nav-li {
+  font-family: inherit;
+  font-size: 90%;
+  opacity: .5;
+  margin: auto 0;
+
+}
+
+.nav-li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  background: black;
+  color: white;
+  width: 100%;
+  height: 3.8rem;
+}
+
+.navbar::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  background-color: lime;
+  height: 1px;
+  width: 100%;
+}
+
+.cart-icon {
+  padding-left: 1vw;
+  height: 1.3rem;
+}
+
+.search-icon {
+  height: 1.3rem;
+}
+
+.message-section {
+  position: relative;
+  top: 3.8rem;
+  color: white;
+  background: #555;
+  min-height: 40px;
+  text-align: center;
+}
+
+.message {
+  display: block;
+  font-size: 0.85rem;
+  padding: 11px;
+}
+
+.shop-now {
+  text-decoration: none;
+  color: white;
+}
+
+.shop-now:hover {
+  text-decoration: underline;
+}
+
+.display_items {
+  position: relative;
+  top: 3.8rem
+}
+
+.display_item {
+  background-repeat:  no-repeat ;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.display_item_header {
+  font-size: 3.4rem;
+  font-weight: 600;
+  top: 10vh;
+}
+
+.display_item_text {
+  display: block;
+  font-family: razerF5;
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+.display_item_theme {
+  font-size: 1.6rem;
+  top: 12vh;
+}
+
+.display_item_links {
+  top: 13vh;
+  font-size: 1.4rem;
+  color: green;
+}
