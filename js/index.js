@@ -1,5 +1,11 @@
 const main_items = [
   {
+    "name": "RAZER VIPER MINI SIGNATURE EDITION",
+    "theme": "THE BEST LIGHTWEIGHT PERFORMANCE GAMING MOUSE",
+    "background": "Assets/backgrounds/viper-mini-signature.png",
+    "links":["Learn More","Buy"]
+  },
+  {
     "name": "PRIME DOMINATION UNLEASHED",
     "theme": "EXCLUSIVE OFFERS AWAIT",
     "background": "Assets/backgrounds/prime-day-2023.png",
