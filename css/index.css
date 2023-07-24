@@ -3,23 +3,23 @@
 
 @font-face {
   font-family: razerF5;
-  src: url('../Assets/RazerF5.woff')
+  src: url('../Assets/fonts/RazerF5.woff')
 }
 
 * {
   margin: 0;
   padding: 0;
   font-family: 'Encode Sans', sans-serif;
+  overflow-x:hidden ;
 }
 
 body {
   background-color: #222;
-  height: 200vh;
+  height:100%;
 }
 
 .logo {
-  width: 2rem;
-  height: 2rem;
+width: 35px;
 }
 
 .nav-ul {
@@ -47,8 +47,11 @@ body {
   text-decoration: none;
   color: white;
 }
-
-.navbar {
+.navbar{
+  height:3.8rem;
+  position: relative;
+}
+.navbar-div {
   z-index: 1;
   display: flex;
   align-items: center;
@@ -64,22 +67,22 @@ body {
   position: absolute;
   bottom: 0;
   background-color: lime;
+  z-index: 1;
   height: 1px;
   width: 100%;
 }
 
 .cart-icon {
   padding-left: 1vw;
-  height: 1.3rem;
+  height: 20px;
 }
 
 .search-icon {
-  height: 1.3rem;
+  height: 20px;
 }
 
 .message-section {
   position: relative;
-  top: 3.8rem;
   color: white;
   background: #555;
   min-height: 40px;
@@ -92,29 +95,29 @@ body {
   padding: 11px;
 }
 
-.shop-now {
+.links {
   text-decoration: none;
   color: white;
 }
 
-.shop-now:hover {
+.links:hover {
   text-decoration: underline;
 }
 
-.display_items {
+.main_display_items {
   position: relative;
-  top: 3.8rem
 }
 
-.display_item {
-  background-repeat:  no-repeat ;
+.main_display_item {
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-bottom:10px;
   height: 100vh;
   width: 100%;
 }
 
-.display_item_header {
+.main_display_item_header {
   font-size: 3.4rem;
   font-weight: 600;
   top: 10vh;
@@ -128,13 +131,103 @@ body {
   text-align: center;
 }
 
-.display_item_theme {
+.main_display_item_theme {
   font-size: 1.6rem;
   top: 12vh;
 }
 
-.display_item_links {
+.main_display_item_links {
+  display: flex;
+  justify-content: center;
   top: 13vh;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: green;
+}
+.link-flex{
+  display:flex;
+  column-gap:2vw;
+}
+
+.side_display_items {
+  display: grid;
+  position: relative;
+  grid-template-columns: 49.6% 49.6%;
+  width:100%;
+  justify-content:space-between;
+  row-gap: 10px;
+}
+
+.side_display_item {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.side_display_item_header{
+  font-size: 2.5rem;
+  font-weight: 600;
+  top: 10vh;
+}
+.side_display_item_theme {
+  font-size: 1.3rem;
+  top: 12vh;
+}
+.side_display_item_links{
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  top: 14vh;
+  color: green;
+}
+.footer {
+  position:relative;
+  background: black;
+  color: white;
+  font-size: 1rem;
+  word-spacing: 2px;
+}
+.footer-span{
+  font-family: razerF5;
+  display:block;
+  text-align: center;
+  padding: 15px 10px; 
+}
+.footer-span a{
+  color:aqua; 
+}
+@media only screen and (max-width: 1000px) {
+  .side_display_items {
+  grid-template-columns: 100%;
+}
+  html{
+    font-size:0.75rem;
+  }
+
+}
+@media only screen and (max-width:600px){
+  .nav-ul{
+    display: block;
+  }
+  .nav-li{display:none;}
+  .logo-li{
+    position: absolute;
+    left: 0px;
+    width: 100vw;
+    display: flex;
+    height: 3.8rem;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .logo{
+    width:35px;
+       
+    }
+  .cart-li{
+    height: 3.8rem;
+    display: flex;
+    align-items: center;
+    float: right;
+  }
 }
